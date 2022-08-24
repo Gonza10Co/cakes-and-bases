@@ -1,0 +1,7 @@
+.drawer-div {
+	width: 40px;
+	display: flex;
+	justify-content: flex-start;
+	border-radius: 10px;
+	padding-left: 0px;
+}

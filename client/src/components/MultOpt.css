@@ -1,0 +1,94 @@
+.opts-container {
+	margin-top: 5px;
+	margin-right: 20px;
+	display: inline-grid;
+	width: 200px;
+	border-radius: 8px;
+}
+.select-btn {
+	display: flex;
+	height: 40px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.select-btn .btn-text {
+	font-size: 16px;
+	font-family: 'roboto';
+	font-weight: 400;
+	color: #333;
+}
+
+.select-btn .filter {
+	display: flex;
+	height: 30px;
+	width: 30px;
+	color: #fff;
+	font-size: 14px;
+	background: rgb(0, 68, 255);
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.list-items {
+	position: relative;
+	margin-top: 60px;
+	border-radius: 8px;
+	padding: 16px;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	display: none;
+}
+
+.select-btn.open ~ .list-items {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	font-family: 'roboto';
+	display: flex;
+	align-items: center;
+	height: 30px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #333;
+	cursor: pointer;
+	transition: 1s;
+	padding: 0 15px;
+	border-radius: 8px;
+	z-index: 10;
+}
+
+.item:hover {
+	background-color: #e7edfe;
+}
+
+.item .checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 16px;
+	width: 16px;
+	border-radius: 4px;
+	margin-right: 12px;
+	border: 1.5px solid #c0c0c0;
+	transition: all 0.3s ease-in-out;
+	user-select: none;
+}
+
+.checkbox .check-icon {
+	font-size: 11px;
+	transform: scale(0);
+}
+
+.item.checked .check-icon {
+	transform: scale(1);
+}
